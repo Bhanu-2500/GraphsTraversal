@@ -6,7 +6,8 @@
 int main()
 {
     Graph G;
-    G.readGraph("Graph.txt");
-    std::cout << "Hello World!\n";
+    G.readGraph("TextFile1.txt");
+    //std::cout << "Hello World!\n";
+    G.BFS(4);
 }
 

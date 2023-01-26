@@ -60,9 +60,18 @@ void Graph:: BFS(int v) {
 	}
 	queue<int> Q;
 	Q.push(v);
+	visited[v] = true;
 	while (!Q.empty()) {
 		int cV = Q.front();
 		cout << cV << ", ";
 		Q.pop();
+		
+
+		for (auto i = adj[cV].begin(); i != adj[cV].end(); i++) {
+			if (!visited[*i]) {
+				visited[*i] = true;
+				Q.push(*i);
+			}
+		}
 	}
 }

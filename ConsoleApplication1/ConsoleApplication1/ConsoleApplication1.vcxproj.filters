@@ -26,5 +26,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Graph.txt" />
+    <Text Include="..\TextFile1.txt" />
+    <Text Include="Graph2.txt" />
   </ItemGroup>
 </Project>
